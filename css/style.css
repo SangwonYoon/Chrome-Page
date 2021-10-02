@@ -1,0 +1,26 @@
+.hidden{
+    display: none;
+}
+
+#header{
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-box{
+    margin-left: 20px;
+    flex-grow: 1;
+}
+#weather > span{
+    font-size: 20px;
+    font-weight: 800px;
+}
+
+.clock-box{
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
