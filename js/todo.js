@@ -18,16 +18,17 @@ function deleteToDo(e){
 }
 
 function paintToDo(newTodo){
-    const li = document.createElement("li");
-    li.id = newTodo.id;
-    const span = document.createElement("span");
-    span.innerText = newTodo.text;
+    const outerDiv = document.createElement("outerDiv");
+    outerDiv.id = newTodo.id;
+    outerDiv.className = "innerGrid";
+    const innerDiv = document.createElement("innerDiv");
+    innerDiv.innerText = newTodo.text;
     const button = document.createElement("button");
     button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
-    li.appendChild(span);
-    li.appendChild(button);
-    toDoList.appendChild(li);
+    outerDiv.appendChild(innerDiv);
+    outerDiv.appendChild(button);
+    toDoList.appendChild(outerDiv);
 }
 
 function handleToDoSubmit(e){
